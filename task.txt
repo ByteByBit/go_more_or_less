@@ -1,0 +1,33 @@
+GoMoreOrLess
+You are tasked with creating a GoMore competitor! Please write an interactive program that
+allows the user to create and search for rides between cities.
+The program should present a prompt to the user and accept the following commands:
+- C from-city to-city date number-of-seats
+Create a new ride from from-city to to-city on date with number-of-seats available for
+booking.
+- R date
+Create a return-trip on date using the last created ride as a template.
+- S [from-city [to-city]] [from-date [to-date]] [minimum-free-seats]
+Search for rides between cities in the specified date range with the specified number of
+seats available. All parameters are optional. Please see examples below for some
+combinations.
+Example interaction
+“>” indicates user input
+“=>” indicates program response
+> C Odense Copenhagen 2018-10-01 4
+> C Copenhagen Aarhus 2018-10-01 2
+> C Odense Copenhagen 2018-10-02 1
+> S Odense Copenhagen 2018-10-01
+=>
+Odense Copenhagen 2018-10-01 4
+> S Odense Copenhagen 2018-10-01 2018-10-03
+=>
+Odense Copenhagen 2018-10-01 4
+Odense Copenhagen 2018-10-02 1
+> S Odense Copenhagen 2018-10-01 2018-10-03 2
+=>
+Odense Copenhagen 2018-10-01 4
+> R 2018-10-03
+> S Copenhagen Odense
+=>
+Copenhagen Odense 2018-10-03 1
