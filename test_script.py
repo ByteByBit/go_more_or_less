@@ -20,7 +20,7 @@ class TestScript(TestCase):
             [Parameters(args=['2018-10-01', '2', 'Odense']), f'Odense Copenhagen 2018-10-01 4 {linesep}'], # S Odense 2018-10-01 2
             [Parameters(args=['2018-10-01', 'Aarhus']), ''], # S 2018-10-01 Aarhus
             [Parameters(args=['2020-10-01', 'Aarhus']), ''], # S 2020-10-01 Aarhus
-            [Parameters(args=['2020-10-01', 'Odense']), ''] # S 2020-10-01 Aarhus
+            [Parameters(args=['2020-10-01', 'Odense']), ''] # S 2020-10-01 Odense
         ]
 
         for arg in args:
